@@ -25,7 +25,3 @@ development:
 test:
   <<: *default
   database: orderbot_test
-
-production:
-  <<: *default
-  database: orderbot_production
