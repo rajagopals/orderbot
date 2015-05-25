@@ -11,7 +11,7 @@ class MessagesController < ApplicationController
       # http://stackoverflow.com/questions/7124778/how-to-match-anything-up-until-this-sequence-of-characters-in-a-regular-expres
 
       # Capture everything until first occurance of 'from' or 'at' or the end of the sentence
-      if match = params[:text].match(/(?<=\bwant\s|\border\s)(.+?)(?=\bfrom|$|\bat)/i)
+      if match = params[:text].match(/(?<=\bwant\s|\border\s|\bhave|\blike\s)(.+?)(?=\bfrom|$|\bat)/i)
         wants = match.captures.first || "nothing"
       end
 
@@ -23,7 +23,7 @@ class MessagesController < ApplicationController
 
       nexmo.send_message(from: '12192099266', 
                          to: params[:msisdn], 
-                         text: "Thanks for using OrderBOT! Your order of #{wants} from #{from} will be ready in 15 minutes!")
+                         text: "Thanks for using OrderBOT! Your order of '#{wants}' from '#{from}' will be ready in 15 minutes!")
     end
 
     head :ok, content_type: "text/html"
