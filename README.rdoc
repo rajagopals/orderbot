@@ -1,5 +1,9 @@
 == README
 
+* To run server run '''rails s'''
+* https://github.com/timcraft/nexmo
+* To test messaging from local - http://localhost:3000/messages/incoming?msisdn=14158603682&text=hereyougo
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
@@ -26,3 +30,6 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+
+
