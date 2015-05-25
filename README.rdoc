@@ -2,7 +2,7 @@
 
 * To run server run '''rails s'''
 * https://github.com/timcraft/nexmo
-* To test messaging from local - http://localhost:3000/messages/incoming?msisdn=14158603682&text=hereyougo
+* To test messaging from local - http://localhost:3000/messages/incoming?msisdn=14154154154&text=hereyougo
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
